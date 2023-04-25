@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            padding: 30px;
+            font-size: 50px;
+            background-color: aqua;
+        }
+
+        ul{
+            background-color: blue;
+            list-style: none;
+            width: 30%;
+            float: left;
+            height: 300px;
+        }
+
+        li{
+            color: red;
+            font-size: 30px;
+        }
+
+        div{
+            width: 70%;
+            height: 300px;
+            float: right;
+            text-align: center;
+            padding-top: 50px;
+            background-color: burlywood;
+        }
+
+        div p{
+            padding-bottom: 50px;
+            font-size: 30px;
+        }
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        footer{
+            text-align: center;
+            padding: 50px;
+            font-size: 30px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My First WebSite</h1>
+    </header>
+
+    <main class="clearfix">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Info</li>
+        </ul>
+
+        <div>
+            <p>Welcome to our WebSite</p>
+            <p>This is the most amazing website</p>
+        </div>
+    </main>
+    
+    <footer>
+        Copyright @ codcadding.com
+    </footer>
+
+</body>
+</html>

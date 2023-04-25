@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 100%;
+            background-color: gray;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .img{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+            color: #fff;
+            position: relative;
+        }
+
+        .img span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .text{
+            margin-top: 70px;
+        }
+
+        a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        Student Bio
+    </header>
+
+    <main>
+        <section class="info">
+            <h4>Your Name</h4>
+            <div class="img">
+                <span>200-200</span>
+            </div>
+        </section>
+
+        <section class="text">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ratione ipsa tempore delectus. Aliquam! <a href="#">WWW.lipsum.com</a>
+            </p>
+        </section>
+
+        <section class="contact">
+            <h4>Contact Info</h4>
+            <ul>
+                <li><b>Email: </b> <a href="#">some.com</a></li>
+                <li><b>Github: </b> <a href="#">some.com</a></li>
+                <li><b>Portfolio: </b> <a href="#">some.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>
