@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 1822px;
+            margin: auto;
+        }
+
+        h1{
+            color: #399e97;
+            font-family: 'Lobster';
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 34px;
+            margin-right: 781px;
+            margin-left: 766px;
+            margin-bottom: 35px;
+        }
+
+        hr{
+            height: 2px;
+            margin-left: 8px;
+            border: 1px solid #000000;
+            margin-bottom: 20px;
+        }
+
+        .name{
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .cost{
+            font-size: 25px;
+            color: #008000;
+        }
+
+        .cost small{
+            font-size: 15px;
+            color: #ff0000;
+        }
+
+        img{
+            height: 302px;
+            width: 200px;
+        }
+
+        .article{
+            background-color: #000000;
+            color: #fff;
+            height: 256px;
+            padding-top: 88px;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        span{
+            font-size: 16px;
+            font-weight: 400px;
+        }
+
+        table{
+            width: 100%;
+            margin-top: 24px;
+        }
+
+        main{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        main img{
+            height: 478px;
+            width: 300px;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        .form-header{
+            font-size: 24px;
+            margin-bottom: 18px;
+        }
+
+        .question{
+            margin: 20px 0;
+        }
+
+        .qiymet{
+            margin: 25px 0 18px 0;
+        }
+
+        button{
+            background-color: #109e97;
+            width: 120px;
+            height: 50px;
+            margin-top: 22px;
+        }
+
+        .links{
+            margin-bottom: 44px;
+        }
+
+        a{
+            text-decoration: none;
+            display: block;
+        }
+
+        footer{
+            width: 100%;
+            background-color: #109e97;
+            height: 86px;
+            text-align: center;
+            color: #fff;
+            padding-top: 34px;
+            font-size: 14px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Kitab Magazasi</h1>
+    <hr>
+
+    <p class="name">
+        David Eagleman - Incognito(Beynin gizli heyati)
+    </p>
+
+    <p class="cost">
+        12.00 AZN<small>15.00 AZN</small>
+    </p>
+
+    <img src="./Devid_Iqlman_Inkognito_qapaq__1_.png" alt="">
+
+    <p class="article">
+        Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə edilən və indidən klassik əsərə çevrilən bu kitabı beynin sirli dünyasına təcrübələr, elmi biliklər və tarixi faktlar işığında səyahət edir. Kitab tibbi mövzuda olsa da, müəllif yazarlıq məharətini və zəngin biliyini birləşdirərək elmi faktları sadə və müqayisəli dillə oxucularına təqdim edir. Müəllif əsər boyu sədaqət geni, qumarbazlara çevrilən parkinson xəstələri, gen-mühit əlaqəsi, “yaxşı” və “pis” gen, şüuraltı və qərarvermə mexanizmi, məsuliyyət anlayışı, beynin insan həyatında rolu kimi bir çox mövzulara toxunur. Alim bu mövzuların beyinlə əlaqəsini izah etməklə kifayətlənmir, beyinlə bağlı müxtəlif formullar və modellər irəli sürür. İnsan psixologiyası və davranışlarına neyron və gen prizmasından baxmağı öyrədir. Elmi-populyar dildə yazılmış bu kitab xüsusən müəllimlər, psixoloqlar, valideynlər, həkimlər üçün mühüm bilikləri ehtiva edir.
+    </p>
+    <hr>
+
+    <span>Xususiyyetler</span>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Xususiyyet</th>
+                <th>Aciqlama</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dil:</td>
+                <td>Azerbaycanca</td>
+            </tr>
+
+            <tr>
+                <td>Janr:</td>
+                <td>Psixologiya</td>
+            </tr>
+
+            <tr>
+                <td>Muellif:</td>
+                <td>David Eagleman</td>
+            </tr>
+
+            <tr>
+                <td>Nesriyyat:</td>
+                <td>Qanun Nesriyyati</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <main>
+        <img src="./Devid_Iqlman_Inkognito_qapaq__1_.png" alt="">
+
+        <form>
+            <p class="form-header">Serh Yaz</p>
+            <label style="text-align: center;">Tam Adiniz</label><br>
+            <input type="text">
+
+            <p class="question">Bu kitabi oxumuszunuz?</p>
+
+            <label>Ne vaxt oxumusunuz?</label>
+            <input  style="margin-bottom: 18px;" type="datetime"><br> 
+
+            <label>Hansi dilde oxumusunuz?</label>
+            <select>
+                <option>Azerbaycan</option>
+                <option>Turk</option>
+                <option>English</option>
+            </select>
+            <p class="qiymet">Qiymetlendirme</p>
+
+            <p>Qeyd edin:</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+
+            <button>Gonder</button>
+        </form>
+
+        <img src="./Devid_Iqlman_Inkognito_qapaq__1_.png" alt="">
+    </main>
+
+    <div class="links">
+        <a href="#">Facebook</a>
+        <a href="#">youtube</a>
+        <a href="#">Instagram</a>
+        <a href="#">linkedn</a>
+        <a href="#">google</a>
+    </div>
+    <hr>
+
+    <footer>
+        2020 @ Butun haklar qorunur
+    </footer>
+</body>
+</html>
