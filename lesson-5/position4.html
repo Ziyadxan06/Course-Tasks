@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            margin-top: 50px;
+        }
+
+        .absolute{
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        
+        .inner-text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .container{
+            background-color: aqua;
+            width: 800px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #box2{
+            position: relative;
+            left: 300px;
+            top: 30px;
+        }
+
+        .static{
+            background-color: gold;
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .relative{
+            background-color: aquamarine;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            top: -30px;
+            left: -10px;
+        }
+
+        #box3{
+            position: relative;
+            top: 60px;
+            left: 300px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="absolute">
+            <p class="inner-text">Absolute</p>
+        </div>
+
+        <div class="container" id="box1">
+            <div class="static">
+                <p class="inner-text">Static</p>
+            </div>
+
+            <div class="relative">
+                <p class="inner-text">Relative</p>
+            </div>
+
+            <div class="static">
+                <p class="inner-text">Static</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="box2">
+        <div class="static">
+            <p class="inner-text">Static</p>
+        </div>
+
+        <div class="static">
+            <p class="inner-text">Static</p>
+        </div>
+    </div>
+
+    <div class="container" id="box3">
+        <div class="static">
+            <p class="inner-text">Static</p>
+        </div>
+
+        <div style="background-color: red;" class="static">
+            <p class="inner-text">Fixed</p>
+        </div>
+
+        <div class="static">
+            <p class="inner-text">Static</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>
