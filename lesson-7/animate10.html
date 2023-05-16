@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box1{
+            background-color: blue;
+            width: 200px;
+            height: 75px;
+            animation-name: anime;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        .box2{
+            background-color: blue;
+            width: 200px;
+            height: 75px;
+        }
+
+        @keyframes anime {
+            0%{
+                width: 200px;
+            }
+
+            25%{
+                width: 300px;
+            }
+
+            75%{
+                width: 240px;
+            }
+
+            100%{
+                width: 380px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h3>Animated</h3>
+   
+        <div class="box1"></div>
+  
+    
+
+    <h3>Not Animated</h3>
+
+
+        <div class="box2"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box1{
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 10000ms;
+        }
+
+        .box2{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition-duration: 7000ms;
+        }
+
+        .box3{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+            transition-duration: 5000ms;
+        }
+
+        button:focus ~ .box1 {
+            transform: rotate(360deg);
+        }
+
+        button:focus ~ .box1 > .box2{
+            transform: rotate(360deg);
+        }
+
+        button:focus ~ .box1 > .box2 > .box3{
+            transform: rotate(360deg);
+        }
+
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Exercise</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis veritatis reprehenderit voluptatibus alias ex commodi eaque neque necessitatibus repudiandae vitae sint, voluptatem, ad labore? Perferendis itaque explicabo hic voluptatibus delectus officia cumque corporis minus fugiat. Aliquam voluptates eligendi sapiente? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi ducimus, nesciunt enim molestias iusto consectetur.
+    </p>
+<button>load</button>
+    <div class="box1">
+        <div class="box2">
+            <div class="box3"></div>
+        </div>
+    </div>
+
+    
+    
+    
+
+</body>
+</html>

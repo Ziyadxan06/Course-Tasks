@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            background-color: blue;
+            width: 80%;
+            margin: 0 auto;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            
+        }
+        
+        .menu > li{
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            list-style: none;
+            position: relative;
+        }
+
+        .menu > li:first-child{
+            border-top-left-radius: 20px;
+        }
+
+        .menu > li:last-child{
+            border-top-right-radius: 20px;
+        }
+
+        ul li:hover{
+            background-color: cadetblue;
+            cursor: pointer;
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff; 
+        }
+
+        .inner-menu{
+            position: absolute;
+            list-style: none;
+            left: 50%;
+            top: 35px;
+            transform: translate(-50%);
+            width: 100%;
+            display: none;
+        }
+
+        .inner-menu li{
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+        }
+
+        .menu li:hover  .inner-menu{
+            display: block;
+        }
+
+        .menu li:hover  .inner-menu li{
+            animation-name: round;
+            animation-duration: 1s;
+        }
+
+        @keyframes round {
+            from{
+                transform: scaleY(0);
+            }
+
+            to{
+                transform: scaleY(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="#">Menu</a>
+                <ul class="inner-menu">
+                    <li><a href="#">First</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Third</a></li>
+                    <li><a href="#">Fourth</a></li>
+                    <li><a href="#">Fifth</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Menu</a>
+                <ul class="inner-menu">
+                    <li><a href="#">First</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Third</a></li>
+                    <li><a href="#">Fourth</a></li>
+                    <li><a href="#">Fifth</a></li>
+                </ul>
+            <li>
+                <a href="#">Menu</a>
+                <ul class="inner-menu">
+                    <li><a href="#">First</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Third</a></li>
+                    <li><a href="#">Fourth</a></li>
+                    <li><a href="#">Fifth</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Menu</a>
+                <ul class="inner-menu">
+                    <li><a href="#">First</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Third</a></li>
+                    <li><a href="#">Fourth</a></li>
+                    <li><a href="#">Fifth</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Menu</a>
+                <ul class="inner-menu">
+                    <li><a href="#">First</a></li>
+                    <li><a href="#">Second</a></li>
+                    <li><a href="#">Third</a></li>
+                    <li><a href="#">Fourth</a></li>
+                    <li><a href="#">Fifth</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+</html>

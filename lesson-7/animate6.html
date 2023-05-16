@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: green;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2{
+            color: green;
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 5px;
+            transition: ease 2s;
+            
+        }
+
+        .container:hover .box{
+            transform: rotate(360deg);
+            animation-name: rotate;
+            animation-duration: 2s;
+        }
+
+        @keyframes rotate{
+            0%{
+                background-color: red;
+            }
+
+            25%{
+                background-color: blue;
+            }
+
+            50%{
+                background-color: red;
+            }
+
+            100%{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>GeeksforGeeks</h1>
+    <h2>Hover them over to see animation</h2>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

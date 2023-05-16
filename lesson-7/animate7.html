@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: burlywood;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            text-align: center;
+            margin: 3px;
+            font-size: 30px;
+            position: relative;
+            transition: linear 1s;
+        }
+
+        .box1:hover{
+            transform: rotateX(360deg);
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            text-align: center;
+            margin: 3px;
+            position: relative;
+            font-size: 30px;
+            transition: linear 1s;
+        }
+
+        .box2:hover{
+            transform: rotateY(360deg);
+        }
+
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            text-align: center;
+            margin: 3px;
+            position: relative;
+            font-size: 30px;
+            transition: linear 1s;
+        }
+
+        .box3:hover{
+            transform: RotateZ(200deg);
+        }
+
+        p{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <h1>CSS 3D Transform</h1>
+    <div class="container">
+        <div class="box1"><p>RotateX</p></div>
+        <div class="box2"><p>RotateY</p></div>
+        <div class="box3"><p>RotateZ</p></div>
+    </div>
+    
+</body>
+</html>

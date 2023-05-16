@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        #box1{
+            background-color: red;
+            transition: linear 1s;
+        }
+
+        #box1:hover{
+            width: 600px;
+        }
+
+        #box2{
+            background-color: blue;
+            transition: linear 1s;
+            transition-delay: 2s;
+        }
+
+        #box1:hover ~ #box2{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Exercise</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis veritatis reprehenderit voluptatibus alias ex commodi eaque neque necessitatibus repudiandae vitae sint, voluptatem, ad labore? Perferendis itaque explicabo hic voluptatibus delectus officia cumque corporis minus fugiat. Aliquam voluptates eligendi sapiente? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi ducimus, nesciunt enim molestias iusto consectetur.
+    </p>
+
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+
+</body>
+</html>
